@@ -45,30 +45,34 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl text-center text-foreground mb-6">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl text-center text-foreground mb-6 font-semibold">
             Projects & Experience
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             A showcase of my technical projects demonstrating my skills in software development, data analysis, and problem-solving.
           </p>
 
-          <div className="space-y-8">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
               <a
                 key={index}
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-white rounded-lg p-6 shadow-sm border border-border hover:shadow-md transition-shadow"
+                className="group block bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300"
               >
-                <h3 className="text-foreground mb-2">{project.title}</h3>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground mb-4 text-sm md:text-base">
+                  {project.description}
+                </p>
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.topics.map((topic, topicIndex) => (
                     <span
                       key={topicIndex}
-                      className="bg-primary/10 text-primary px-2 py-1 rounded-full text-sm"
+                      className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium"
                     >
                       {topic}
                     </span>
