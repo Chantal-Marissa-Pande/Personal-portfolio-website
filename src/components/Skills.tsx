@@ -2,20 +2,24 @@ import { Badge } from "./ui/badge";
 
 const skillCategories = [
   {
-    title: "Programming Languages",
+    title: " Languages",
     skills: ["Java", "Python", "JavaScript", "SQL"],
   },
   {
-    title: "Web Development",
-    skills: ["HTML", "CSS", "React", "Node.js"],
+    title: "Frontend",
+    skills: ["HTML", "CSS", "React"],
+  },
+  {
+    title: "Backend",
+    skills: ["Node.js", "Express"],
   },
   {
     title: "Databases",
-    skills: ["MySQL", "Firebase", "PostgreSQL"],
+    skills: ["PostgreSQL", "MySQL", "Firebase"],
   },
   {
     title: "Tools & Technologies",
-    skills: ["Git/GitHub", "Figma", "NetBeans", "Android Studio"],
+    skills: ["Git", "Docker", "GitHub", "VS Code", "Postman", "Figma", "Google Colab", "Android Studio"],
   },
   {
     title: "Data Analysis",
