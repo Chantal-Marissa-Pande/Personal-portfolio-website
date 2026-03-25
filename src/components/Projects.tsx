@@ -40,3 +40,45 @@ const projects = [
     url: "https://github.com/vostedagreat/SmartTickets",
   }
 ];
+
+export default function Projects() {
+  return (
+    <section id="projects" className="py-20 bg-white">
+      <div className="container mx-auto px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl text-center text-foreground mb-6">
+            Projects & Experience
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            A showcase of my technical projects demonstrating my skills in software development, data analysis, and problem-solving.
+          </p>
+
+          <div className="space-y-8">
+            {projects.map((project, index) => (
+              <a
+                key={index}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-white rounded-lg p-6 shadow-sm border border-border hover:shadow-md transition-shadow"
+              >
+                <h3 className="text-foreground mb-2">{project.title}</h3>
+                <p className="text-muted-foreground mb-4">{project.description}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.topics.map((topic, topicIndex) => (
+                    <span
+                      key={topicIndex}
+                      className="bg-primary/10 text-primary px-2 py-1 rounded-full text-sm"
+                    >
+                      {topic}
+                    </span>
+                  ))}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

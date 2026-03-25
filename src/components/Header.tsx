@@ -1,7 +1,7 @@
 import { Github, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 
-export function Header() {
+export default function Header() {
   return (
     <header className="border-b border-border bg-white sticky top-0 z-50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">

@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 
-export function Hero() {
+export default function Hero() {
   return (
     <section className="bg-gradient-to-b from-muted to-white py-20 md:py-32">
       <div className="container mx-auto px-6">
