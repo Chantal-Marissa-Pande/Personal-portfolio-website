@@ -22,7 +22,7 @@ export default function About() {
                 Software Innovation
               </h3>
               <p className="text-muted-foreground">
-                Passionate about building modern web applications and exploring new technologies.
+                Passionate about building modern solutions and exploring new technologies.
               </p>
             </div>
             
