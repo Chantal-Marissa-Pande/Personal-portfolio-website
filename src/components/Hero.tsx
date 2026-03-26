@@ -23,11 +23,6 @@ export default function Hero() {
                 View My Work
               </Button>
             </a>
-            <a href="mailto:chantalpande123@gmail.com">
-              <Button size="lg" variant="outline">
-                Get In Touch
-              </Button>
-            </a>
           </div>
         </div>
       </div>
