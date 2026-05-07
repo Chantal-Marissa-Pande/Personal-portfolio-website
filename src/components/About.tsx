@@ -9,7 +9,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            I'm a dedicated Software Engineering student at United States International University - Africa, 
+            I'm a dedicated Software Engineer from United States International University - Africa, 
             skilled in developing applications, leading projects, and applying technology to solve real-world problems.
           </p>
           

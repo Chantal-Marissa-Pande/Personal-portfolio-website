@@ -12,11 +12,10 @@ export default function Hero() {
             Hi, I'm Chantal Marissa Pande
           </h1>
           <p className="text-xl text-muted-foreground mb-8">
-            Software Engineering Student & Aspiring Developer
+            Software Engineer & Developer
           </p>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl">
-            Undergraduate Software Engineering student at USIU with hands-on experience in web development, data analysis, and collaborative project management. Passionate about software innovation, problem-solving, and leveraging data-driven solutions.
-          </p>
+            Software Engineering graduate with experience in fintech environments, backend development, APIs, and collaborative software projects. Skilled in building scalable applications using React, Node.js, PostgreSQL, and JavaScript, with exposure to enterprise technology systems during internship experience at KCB Group. Interested in product-driven technology, digital banking, and developing efficient user-focused solutions within fast-paced engineering teams.          </p>
           <div className="flex flex-wrap gap-4">
             <a href="#projects">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
