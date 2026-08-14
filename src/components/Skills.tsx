@@ -2,36 +2,94 @@ import { Badge } from "./ui/badge";
 
 const skillCategories = [
   {
-    title: " Languages",
+    title: "Programming Languages",
     skills: ["Java", "Python", "JavaScript", "SQL"],
   },
   {
-    title: "Frontend",
-    skills: ["HTML", "CSS", "React"],
+    title: "Frontend Development",
+    skills: ["React", "HTML", "CSS", "Bootstrap"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express"],
+    title: "Backend & APIs",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "Django REST Framework",
+      "Flask",
+      "REST APIs",
+    ],
   },
   {
     title: "Databases",
-    skills: ["PostgreSQL", "MySQL", "Firebase"],
+    skills: ["PostgreSQL", "MySQL", "Firebase Firestore"],
   },
   {
-    title: "Tools & Technologies",
-    skills: ["Git", "Docker", "GitHub", "VS Code", "Postman", "Figma", "Google Colab", "Android Studio"],
+    title: "Tools & Platforms",
+    skills: [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Postman",
+      "VS Code",
+      "Figma",
+      "Google Colab",
+      "Android Studio",
+      "Google Cloud",
+    ],
   },
   {
-    title: "Data Analysis",
-    skills: ["Excel", "Python (Pandas, NumPy)"],
+    title: "Cloud Exposure",
+    skills: ["Microsoft Azure", "AWS"],
+  },
+  {
+    title: "Data & Analytics",
+    skills: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Excel",
+      "Data Visualization",
+    ],
+  },
+  {
+    title: "AI & Generative AI",
+    skills: [
+      "Generative AI",
+      "Prompt Engineering",
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "GitHub Copilot",
+      "AI-Assisted Development",
+    ],
+  },
+  {
+    title: "Product & User-Centered Development",
+    skills: [
+      "User-Centered Design",
+      "Requirements Gathering",
+      "Requirements Analysis",
+      "User Research",
+      "Usability Testing",
+      "Product Thinking",
+      "Product Documentation",
+      "Process Improvement",
+      "Human-Computer Interaction",
+      "Agile Methodologies",
+    ],
   },
   {
     title: "Professional Skills",
     skills: [
+      "Stakeholder Communication",
+      "Stakeholder Management",
+      "Cross-Functional Collaboration",
+      "Problem Framing",
+      "Analytical Reasoning",
+      "Technical Communication",
+      "Presentation Skills",
+      "Workshop Facilitation",
       "Project Planning & Execution",
-      "Team Collaboration & Leadership",
-      "Communication & Presentation",
-      "Research & Problem-Solving",
     ],
   },
 ];
@@ -40,21 +98,29 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-muted">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl text-center text-foreground mb-6">
+        <div className="max-w-5xl mx-auto">
+
+          {/* Section Heading */}
+          <h2 className="text-3xl md:text-4xl text-center text-foreground mb-6 font-semibold">
             Skills & Experience
           </h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-            A diverse technical and professional skill set developed through academic projects and real-world experience.
+
+          <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Technical, AI, product, and professional skills developed through
+            software engineering projects, research, and industry experience.
           </p>
 
-          <div className="space-y-8">
+          {/* Skills Grid */}
+          <div className="grid gap-6 md:grid-cols-2">
             {skillCategories.map((category, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg p-6 shadow-sm border border-border"
+                className="bg-white rounded-xl p-6 shadow-sm border border-border"
               >
-                <h3 className="text-foreground mb-4">{category.title}</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-4">
+                  {category.title}
+                </h3>
+
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
                     <Badge
@@ -71,135 +137,301 @@ export default function Skills() {
           </div>
 
           {/* Professional Experience */}
-          <div className="mt-12 bg-white rounded-lg p-8 shadow-sm border border-border">
-            <h3 className="text-foreground mb-4">Professional Experience</h3>
-            <div className="space-y-6">
+          <div className="mt-12 bg-white rounded-xl p-8 shadow-sm border border-border">
+            <h3 className="text-xl font-semibold text-foreground mb-6">
+              Professional Experience
+            </h3>
+
+            <div className="space-y-8">
+
+              {/* KCB Group */}
               <div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                  <h4 className="text-foreground">Event Organizer</h4>
-                  <span className="text-muted-foreground">
-                    July 2024 - August 2024
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Technology Division Intern
+                    </h4>
+
+                    <p className="text-muted-foreground">
+                      KCB Group · Strategies, Planning & Communications
+                    </p>
+                  </div>
+
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    January 2026 – April 2026
                   </span>
                 </div>
-                <p className="text-muted-foreground mb-2">SEED Global Education</p>
-                <ul className="text-muted-foreground list-disc list-inside space-y-1">
+
+                <ul className="text-muted-foreground list-disc list-inside space-y-2 mt-3">
                   <li>
-                    Marketed events remotely, increasing attendance by 50%
-                    (from 1000 expected to 1500-1800 attendees)
+                    Collaborated with cross-functional stakeholders to support
+                    enterprise technology initiatives within KCB&apos;s
+                    Technology Division.
                   </li>
-                  <li>Assisted over 200+ participants with registration and database entry</li>
+
                   <li>
-                    Improved event success, leading to repeat sessions due to high
-                    turnout
+                    Analysed business workflows and contributed recommendations
+                    to improve operational efficiency.
+                  </li>
+
+                  <li>
+                    Participated in technology planning discussions by gathering
+                    information from technical and business teams.
+                  </li>
+
+                  <li>
+                    Assisted in documenting technology initiatives and
+                    communicating project updates across stakeholders.
+                  </li>
+
+                  <li>
+                    Gained exposure to enterprise APIs, Microsoft Azure, AWS,
+                    fintech infrastructure, and digital transformation
+                    programmes.
                   </li>
                 </ul>
               </div>
 
+              {/* SEED Global Education */}
               <div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                  <h4 className="text-foreground">Volunteer</h4>
-                  <span className="text-muted-foreground">September 2025</span>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Event Organizer
+                    </h4>
+
+                    <p className="text-muted-foreground">
+                      SEED Global Education
+                    </p>
+                  </div>
+
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    July 2024 – 2025
+                  </span>
                 </div>
-                <p className="text-muted-foreground mb-2">Education USA</p>
-                <ul className="text-muted-foreground list-disc list-inside space-y-1">
+
+                <ul className="text-muted-foreground list-disc list-inside space-y-2 mt-3">
                   <li>
-                    Guided and organized flow for 7000+ event attendees, including
-                    undergraduate to PhD aspirants
+                    Marketed educational events remotely, contributing to a 50%
+                    increase in attendance from approximately 1,000 expected
+                    attendees to 1,500–1,800.
                   </li>
+
                   <li>
-                    Supported representatives from Rutgers University, assisting in
-                    registering 2500+ prospective students
+                    Assisted more than 200 participants with registration and
+                    database entry.
                   </li>
+
                   <li>
-                    Part of the team that successfully ushered the US Ambassador
-                    during the event
+                    Contributed to successful event delivery, helping support
+                    repeat sessions following strong turnout.
                   </li>
                 </ul>
               </div>
 
+              {/* EducationUSA */}
               <div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                  <h4 className="text-foreground">Intern</h4>
-                  <span className="text-muted-foreground">
-                    January 2026 - April 2026
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Volunteer
+                    </h4>
+
+                    <p className="text-muted-foreground">
+                      EducationUSA
+                    </p>
+                  </div>
+
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    September 2025 – October 2025
                   </span>
                 </div>
-                <p className="text-muted-foreground mb-2">
-                  KCB Group - Strategies, Planning and Communications in the
-                  Technology Division.
-                </p>
-                <ul className="text-muted-foreground list-disc list-inside space-y-1">
+
+                <ul className="text-muted-foreground list-disc list-inside space-y-2 mt-3">
                   <li>
-                    Assisting with technical planning and strategy creations and
-                    solutions between the company and directors
+                    Guided and organized attendee flow for an education event
+                    serving more than 7,000 participants.
                   </li>
+
                   <li>
-                    Collaborating with the development team to implement new
-                    features and improvements
+                    Supported Rutgers University representatives during the
+                    registration of more than 2,500 prospective students.
                   </li>
+
                   <li>
-                    Gained hands-on experience with enterprise software solutions
-                    and IT operations
+                    Participated in the event team responsible for ushering the
+                    U.S. Ambassador.
                   </li>
                 </ul>
               </div>
             </div>
+          </div>
+
+          {/* AI Experience */}
+          <div className="mt-8 bg-white rounded-xl p-8 shadow-sm border border-border">
+            <h3 className="text-xl font-semibold text-foreground mb-5">
+              AI Experience
+            </h3>
+
+            <ul className="text-muted-foreground list-disc list-inside space-y-2">
+              <li>
+                Regularly use Generative AI tools including ChatGPT, Claude,
+                Gemini, and GitHub Copilot during software development.
+              </li>
+
+              <li>
+                Use AI-assisted workflows to accelerate debugging,
+                documentation, research, and software design.
+              </li>
+
+              <li>
+                Experiment with prompt engineering to improve AI-assisted
+                development workflows.
+              </li>
+
+              <li>
+                Integrated AI-powered functionality into software projects,
+                including recommendation features in Ex-change and a
+                conversational AI chatbot within Otaku254.
+              </li>
+            </ul>
+          </div>
+
+          {/* Research & Product Experience */}
+          <div className="mt-8 bg-white rounded-xl p-8 shadow-sm border border-border">
+            <h3 className="text-xl font-semibold text-foreground mb-5">
+              Research & Product Experience
+            </h3>
+
+            <ul className="text-muted-foreground list-disc list-inside space-y-2">
+              <li>
+                Conducted software requirements gathering for university
+                software engineering projects.
+              </li>
+
+              <li>
+                Performed literature reviews and technical research during
+                project development.
+              </li>
+
+              <li>
+                Evaluated user feedback during iterative software development.
+              </li>
+
+              <li>
+                Applied Human-Computer Interaction principles to interface and
+                workflow design.
+              </li>
+
+              <li>
+                Used usability testing and user feedback to identify pain
+                points and improve application workflows.
+              </li>
+            </ul>
           </div>
 
           {/* Education */}
-          <div className="mt-8 bg-white rounded-lg p-8 shadow-sm border border-border">
-            <h3 className="text-foreground mb-4">Education</h3>
-            <div className="space-y-4">
+          <div className="mt-8 bg-white rounded-xl p-8 shadow-sm border border-border">
+            <h3 className="text-xl font-semibold text-foreground mb-6">
+              Education
+            </h3>
+
+            <div className="space-y-6">
+
+              {/* University */}
               <div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                  <h4 className="text-foreground">BSc. Software Engineering</h4>
-                  <span className="text-muted-foreground">2022 - 2026</span>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                  <h4 className="text-lg font-semibold text-foreground">
+                    BSc. Software Engineering
+                  </h4>
+
+                  <span className="text-sm text-muted-foreground">
+                    2022 – 2026
+                  </span>
                 </div>
+
                 <p className="text-muted-foreground">
-                  United States International University - Africa
+                  United States International University – Africa
                 </p>
+
+                <div className="mt-3">
+                  <p className="text-sm font-medium text-foreground mb-1">
+                    Relevant Coursework
+                  </p>
+
+                  <p className="text-sm text-muted-foreground">
+                    Software Engineering · Database Systems · Cloud Computing ·
+                    Machine Learning · Human-Computer Interaction · Agile
+                    Project Management
+                  </p>
+                </div>
               </div>
 
+              {/* High School */}
               <div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                  <h4 className="text-foreground">KCSE | Mean Grade: B</h4>
-                  <span className="text-muted-foreground">2018 - 2022</span>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
+                  <h4 className="text-lg font-semibold text-foreground">
+                    KCSE · Mean Grade: B
+                  </h4>
+
+                  <span className="text-sm text-muted-foreground">
+                    2018 – 2022
+                  </span>
                 </div>
-                <p className="text-muted-foreground">Moi High School Kabarak</p>
+
+                <p className="text-muted-foreground">
+                  Moi High School Kabarak
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Certifications & Achievements */}
-          <div className="mt-8 bg-white rounded-lg p-8 shadow-sm border border-border">
-            <h3 className="text-foreground mb-4">Certifications & Achievements</h3>
-            <div className="space-y-4">
+          {/* Certifications & Community */}
+          <div className="mt-8 bg-white rounded-xl p-8 shadow-sm border border-border">
+            <h3 className="text-xl font-semibold text-foreground mb-6">
+              Certifications & Community Involvement
+            </h3>
+
+            <div className="space-y-6">
+
+              {/* Certification */}
               <div>
-                <h4 className="text-foreground">Microsoft Office Training</h4>
+                <h4 className="font-semibold text-foreground">
+                  Microsoft Office Training
+                </h4>
+
                 <p className="text-muted-foreground">
                   Grahams Technical College · June 2022
                 </p>
               </div>
 
+              {/* Community */}
               <div>
-                <h4 className="text-foreground mb-2">Community Involvement</h4>
-                <ul className="text-muted-foreground list-disc list-inside space-y-1">
+                <h4 className="font-semibold text-foreground mb-3">
+                  Community Involvement
+                </h4>
+
+                <ul className="text-muted-foreground list-disc list-inside space-y-2">
                   <li>
-                    Community Service at Karura Health Center - Assisted in managing
-                    patient flow and supporting staff
+                    Community Service at Karura Health Center — assisted with
+                    patient flow and supported staff in an understaffed
+                    environment.
                   </li>
+
                   <li>
-                    Environmental Conservation - Participated in afforestation
-                    projects in Nairobi
+                    Environmental Conservation — participated in afforestation
+                    projects in Nairobi supporting land rehabilitation.
                   </li>
+
                   <li>
-                    Volunteer at The Nest - Cared for abandoned children and young
-                    mothers
+                    Volunteer at The Nest — supported abandoned children and
+                    young mothers.
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
