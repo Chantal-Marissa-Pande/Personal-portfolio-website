@@ -1,20 +1,21 @@
 const projects = [
   {
-    title: "Otaku254 | AI-Powered Community Platform",
+    title: "SmartEntry | Visitor & Security Management Platform",
     description:
-      "A full-stack community and content platform for anime, manga, K-pop, and pop-culture enthusiasts. Features Firebase authentication, Firestore-powered content and community interactions, personalized user preferences, theme customization, and an AI chatbot for conversational content discovery.",
-    language: "React / TypeScript",
+      "A full-stack visitor and security management platform for organizations. Features JWT-based authentication, visitor tracking, incident management, reporting, notifications, user administration, analytics dashboards, and role-based access through a Django REST API.",
+    language: "Python / JavaScript",
     topics: [
-      "react",
-      "typescript",
-      "firebase",
-      "firestore",
-      "authentication",
-      "generative-ai",
-      "chatbot",
-      "community-platform",
+      "django",
+      "django-rest-framework",
+      "javascript",
+      "vite",
+      "bootstrap",
+      "postgresql",
+      "jwt",
+      "rest-api",
+      "security-management",
     ],
-    url: "https://github.com/Chantal-Marissa-Pande/otaku254",
+    url: "https://github.com/Chantal-Marissa-Pande/SmartEntry",
   },
   {
     title: "Ex-change | Skill Exchange Platform",
@@ -28,6 +29,7 @@ const projects = [
       "postgresql",
       "rest-api",
       "websockets",
+      "jwt",
       "user-testing",
     ],
     url: "https://github.com/Chantal-Marissa-Pande/Ex-change",
@@ -41,9 +43,10 @@ const projects = [
       "react",
       "vite",
       "django",
-      "rest-api",
+      "django-rest-framework",
       "postgresql",
       "bootstrap",
+      "rest-api",
       "agritech",
     ],
     url: "https://github.com/Chantal-Marissa-Pande/eshamba",
@@ -59,7 +62,7 @@ const projects = [
       "fxml",
       "tcp",
       "sockets",
-      "real-time",
+      "networking",
       "desktop-app",
     ],
     url: "https://github.com/MeshackMumo03/WhatsApp_Clone",
@@ -94,6 +97,22 @@ const projects = [
     ],
     url: "https://colab.research.google.com/drive/1pICPIw1CLgQltJA6sYldLFd19y9hNv-G",
   },
+  {
+    title: "Otaku254 | Community & Content Platform",
+    description:
+      "A community and content platform for anime, manga, K-pop, and pop-culture enthusiasts. Features Firebase authentication, Firestore-powered content and community interactions, personalized user preferences, and theme customization, with conversational AI functionality currently under development.",
+    language: "React / TypeScript",
+    topics: [
+      "react",
+      "typescript",
+      "firebase",
+      "firestore",
+      "authentication",
+      "community-platform",
+      "content-platform",
+    ],
+    url: "https://github.com/Chantal-Marissa-Pande/otaku254",
+  },
 ];
 
 export default function Projects() {
@@ -101,7 +120,6 @@ export default function Projects() {
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-
           {/* Section Heading */}
           <h2 className="text-3xl md:text-4xl text-center text-foreground mb-6 font-semibold">
             Projects
@@ -109,8 +127,9 @@ export default function Projects() {
 
           <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
             A selection of projects demonstrating my experience in full-stack
-            development, AI integration, APIs, real-time systems, data analysis,
-            and user-centered software development.
+            development, REST APIs, real-time systems, database design,
+            cloud-based applications, data analysis, and user-centered software
+            development.
           </p>
 
           {/* Projects Grid */}

@@ -7,21 +7,35 @@ const skillCategories = [
   },
   {
     title: "Frontend Development",
-    skills: ["React", "HTML", "CSS", "Bootstrap"],
+    skills: [
+      "React",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Vite",
+    ],
   },
   {
     title: "Backend & APIs",
     skills: [
       "Node.js",
       "Express.js",
+      "Django",
       "Django REST Framework",
       "Flask",
       "REST APIs",
+      "JWT Authentication",
     ],
   },
   {
     title: "Databases",
-    skills: ["PostgreSQL", "MySQL", "Firebase Firestore"],
+    skills: [
+      "PostgreSQL",
+      "MySQL",
+      "Firebase Firestore",
+      "Relational Database Design",
+      "CRUD Operations",
+    ],
   },
   {
     title: "Tools & Platforms",
@@ -39,7 +53,25 @@ const skillCategories = [
   },
   {
     title: "Cloud Exposure",
-    skills: ["Microsoft Azure", "AWS"],
+    skills: [
+      "Microsoft Azure",
+      "AWS",
+      "Google Cloud",
+      "Cloud Deployment Fundamentals",
+    ],
+  },
+  {
+    title: "Software Development Practices",
+    skills: [
+      "Object-Oriented Programming",
+      "Git Workflows",
+      "Agile Methodologies",
+      "Testing & Debugging",
+      "Database Design",
+      "CI/CD Fundamentals",
+      "Secure Coding Fundamentals",
+      "Software Development Lifecycle",
+    ],
   },
   {
     title: "Data & Analytics",
@@ -106,8 +138,9 @@ export default function Skills() {
           </h2>
 
           <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Technical, AI, product, and professional skills developed through
-            software engineering projects, research, and industry experience.
+            Technical, software development, AI, product, and professional
+            skills developed through industry experience, software engineering
+            projects, and research.
           </p>
 
           {/* Skills Grid */}
@@ -143,6 +176,57 @@ export default function Skills() {
             </h3>
 
             <div className="space-y-8">
+
+              {/* Eclectics International */}
+              <div>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Software Development Intern
+                    </h4>
+
+                    <p className="text-muted-foreground">
+                      Eclectics International · Products, Research & Development
+                    </p>
+                  </div>
+
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    August 2026 – October 2026
+                  </span>
+                </div>
+
+                <ul className="text-muted-foreground list-disc list-inside space-y-2 mt-3">
+                  <li>
+                    Developed and refine software applications within the
+                    Products, Research & Development department using modern
+                    development tools and frameworks.
+                  </li>
+
+                  <li>
+                    Gained hands-on experience in frontend and backend
+                    development, relational and non-relational databases,
+                    and CRUD operations.
+                  </li>
+
+                  <li>
+                    Applied object-oriented programming, Git-based version
+                    control, testing, debugging, and Agile software development
+                    practices.
+                  </li>
+
+                  <li>
+                    Built practical knowledge of secure coding, data
+                    structures, algorithms, CI/CD fundamentals, and application
+                    deployment.
+                  </li>
+
+                  <li>
+                    Collaborated on project-based software development while
+                    strengthening technical documentation, teamwork, and
+                    problem-solving skills.
+                  </li>
+                </ul>
+              </div>
 
               {/* KCB Group */}
               <div>
@@ -290,9 +374,9 @@ export default function Skills() {
               </li>
 
               <li>
-                Integrated AI-powered functionality into software projects,
-                including recommendation features in Ex-change and a
-                conversational AI chatbot within Otaku254.
+                Integrated recommendation functionality into Ex-change and am
+                exploring conversational AI integration through ongoing
+                personal software projects.
               </li>
             </ul>
           </div>
