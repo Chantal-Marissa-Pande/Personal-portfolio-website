@@ -3,14 +3,15 @@ import { Badge } from "./ui/badge";
 const skillCategories = [
   {
     title: "Programming Languages",
-    skills: ["Java", "Python", "JavaScript", "SQL"],
+    skills: ["Java", "Python", "JavaScript", "TypeScript", "SQL", "Kotlin"],
   },
   {
     title: "Frontend Development",
     skills: [
+      "Angular",
       "React",
-      "HTML",
-      "CSS",
+      "HTML5",
+      "CSS3",
       "Bootstrap",
       "Vite",
     ],
@@ -23,8 +24,10 @@ const skillCategories = [
       "Django",
       "Django REST Framework",
       "Flask",
+      "Spring Boot",
       "REST APIs",
       "JWT Authentication",
+      "API Integration",
     ],
   },
   {
@@ -46,17 +49,19 @@ const skillCategories = [
       "Postman",
       "VS Code",
       "Figma",
+      "Linear",
       "Google Colab",
       "Android Studio",
-      "Google Cloud",
     ],
   },
   {
-    title: "Cloud Exposure",
+    title: "Cloud & Deployment",
     skills: [
       "Microsoft Azure",
       "AWS",
       "Google Cloud",
+      "Render",
+      "Vercel",
       "Cloud Deployment Fundamentals",
     ],
   },
@@ -76,11 +81,11 @@ const skillCategories = [
   {
     title: "Data & Analytics",
     skills: [
-      "Python",
       "Pandas",
       "NumPy",
       "Excel",
       "Data Visualization",
+      "Financial Dashboard Design",
     ],
   },
   {
@@ -98,30 +103,29 @@ const skillCategories = [
   {
     title: "Product & User-Centered Development",
     skills: [
+      "UI/UX Prototyping",
       "User-Centered Design",
       "Requirements Gathering",
       "Requirements Analysis",
+      "Technical Research",
       "User Research",
       "Usability Testing",
       "Product Thinking",
       "Product Documentation",
-      "Process Improvement",
       "Human-Computer Interaction",
-      "Agile Methodologies",
     ],
   },
   {
     title: "Professional Skills",
     skills: [
       "Stakeholder Communication",
-      "Stakeholder Management",
       "Cross-Functional Collaboration",
-      "Problem Framing",
-      "Analytical Reasoning",
       "Technical Communication",
+      "Analytical Reasoning",
+      "Problem Solving",
       "Presentation Skills",
-      "Workshop Facilitation",
-      "Project Planning & Execution",
+      "Project Planning",
+      "Technical Documentation",
     ],
   },
 ];
@@ -131,19 +135,16 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-muted">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
-
-          {/* Section Heading */}
           <h2 className="text-3xl md:text-4xl text-center text-foreground mb-6 font-semibold">
             Skills & Experience
           </h2>
 
           <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Technical, software development, AI, product, and professional
-            skills developed through industry experience, software engineering
-            projects, and research.
+            Technical, product, research, and professional skills developed
+            through industry experience, software engineering projects, and
+            collaborative product development.
           </p>
 
-          {/* Skills Grid */}
           <div className="grid gap-6 md:grid-cols-2">
             {skillCategories.map((category, index) => (
               <div
@@ -175,8 +176,7 @@ export default function Skills() {
               Professional Experience
             </h3>
 
-            <div className="space-y-8">
-
+            <div className="space-y-10">
               {/* Eclectics International */}
               <div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
@@ -191,39 +191,48 @@ export default function Skills() {
                   </div>
 
                   <span className="text-sm text-muted-foreground whitespace-nowrap">
-                    August 2026 – October 2026
+                    August 2026 – September 2026
                   </span>
                 </div>
 
                 <ul className="text-muted-foreground list-disc list-inside space-y-2 mt-3">
                   <li>
-                    Developed and refine software applications within the
-                    Products, Research & Development department using modern
-                    development tools and frameworks.
+                    Researched technologies and frameworks for web and mobile
+                    development, financial dashboards, data visualization, and
+                    API integration to support project technology decisions.
                   </li>
 
                   <li>
-                    Gained hands-on experience in frontend and backend
-                    development, relational and non-relational databases,
-                    and CRUD operations.
+                    Proposed SmartEntry, a visitor management and security
+                    platform, and researched its architecture, technology stack,
+                    and deployment options during project selection.
                   </li>
 
                   <li>
-                    Applied object-oriented programming, Git-based version
-                    control, testing, debugging, and Agile software development
-                    practices.
+                    Contributed to SM-Intelligence, a financial management
+                    platform, working on the Angular customer-facing frontend
+                    within an architecture incorporating Kotlin, Spring Boot,
+                    and PostgreSQL.
                   </li>
 
                   <li>
-                    Built practical knowledge of secure coding, data
-                    structures, algorithms, CI/CD fundamentals, and application
-                    deployment.
+                    Designed UI/UX prototypes in Figma for landing,
+                    authentication, onboarding, and dashboard interfaces,
+                    applying financial dashboard design and usability
+                    principles.
                   </li>
 
                   <li>
-                    Collaborated on project-based software development while
-                    strengthening technical documentation, teamwork, and
-                    problem-solving skills.
+                    Developed customer-facing features covering registration,
+                    login, onboarding, dashboard, accounts, transactions, cash
+                    flow, budgets, analysis, reports, notifications, and
+                    settings.
+                  </li>
+
+                  <li>
+                    Collaborated using Git and GitHub for version control and
+                    Linear for task tracking while contributing to requirements
+                    and technical discussions.
                   </li>
                 </ul>
               </div>
@@ -237,7 +246,7 @@ export default function Skills() {
                     </h4>
 
                     <p className="text-muted-foreground">
-                      KCB Group · Strategies, Planning & Communications
+                      KCB Group · Strategy, Planning & Communications
                     </p>
                   </div>
 
@@ -259,13 +268,13 @@ export default function Skills() {
                   </li>
 
                   <li>
-                    Participated in technology planning discussions by gathering
-                    information from technical and business teams.
+                    Participated in technology planning by gathering information
+                    from technical and business teams.
                   </li>
 
                   <li>
-                    Assisted in documenting technology initiatives and
-                    communicating project updates across stakeholders.
+                    Assisted with technology documentation and communication of
+                    project updates across stakeholders.
                   </li>
 
                   <li>
@@ -276,39 +285,32 @@ export default function Skills() {
                 </ul>
               </div>
 
-              {/* SEED Global Education */}
+              {/* SEED */}
               <div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
                   <div>
                     <h4 className="text-lg font-semibold text-foreground">
                       Event Organizer
                     </h4>
-
                     <p className="text-muted-foreground">
                       SEED Global Education
                     </p>
                   </div>
 
                   <span className="text-sm text-muted-foreground whitespace-nowrap">
-                    July 2024 – 2025
+                    July 2024 – July 2025
                   </span>
                 </div>
 
                 <ul className="text-muted-foreground list-disc list-inside space-y-2 mt-3">
                   <li>
-                    Marketed educational events remotely, contributing to a 50%
-                    increase in attendance from approximately 1,000 expected
+                    Marketed educational events remotely, contributing to
+                    attendance growth from approximately 1,000 expected
                     attendees to 1,500–1,800.
                   </li>
-
                   <li>
                     Assisted more than 200 participants with registration and
                     database entry.
-                  </li>
-
-                  <li>
-                    Contributed to successful event delivery, helping support
-                    repeat sessions following strong turnout.
                   </li>
                 </ul>
               </div>
@@ -320,10 +322,7 @@ export default function Skills() {
                     <h4 className="text-lg font-semibold text-foreground">
                       Volunteer
                     </h4>
-
-                    <p className="text-muted-foreground">
-                      EducationUSA
-                    </p>
+                    <p className="text-muted-foreground">EducationUSA</p>
                   </div>
 
                   <span className="text-sm text-muted-foreground whitespace-nowrap">
@@ -333,15 +332,13 @@ export default function Skills() {
 
                 <ul className="text-muted-foreground list-disc list-inside space-y-2 mt-3">
                   <li>
-                    Guided and organized attendee flow for an education event
+                    Supported attendee coordination for an education event
                     serving more than 7,000 participants.
                   </li>
-
                   <li>
-                    Supported Rutgers University representatives during the
+                    Supported Rutgers University representatives with
                     registration of more than 2,500 prospective students.
                   </li>
-
                   <li>
                     Participated in the event team responsible for ushering the
                     U.S. Ambassador.
@@ -359,24 +356,20 @@ export default function Skills() {
 
             <ul className="text-muted-foreground list-disc list-inside space-y-2">
               <li>
-                Regularly use Generative AI tools including ChatGPT, Claude,
-                Gemini, and GitHub Copilot during software development.
+                Use Generative AI tools including ChatGPT, Claude, Gemini, and
+                GitHub Copilot to support software development.
               </li>
-
               <li>
-                Use AI-assisted workflows to accelerate debugging,
-                documentation, research, and software design.
+                Apply AI-assisted workflows to debugging, documentation,
+                research, and software design.
               </li>
-
               <li>
-                Experiment with prompt engineering to improve AI-assisted
-                development workflows.
+                Experiment with prompt engineering and AI-assisted development
+                workflows.
               </li>
-
               <li>
-                Integrated recommendation functionality into Ex-change and am
-                exploring conversational AI integration through ongoing
-                personal software projects.
+                Integrated recommendation functionality into Ex-change and
+                explored conversational AI through personal software projects.
               </li>
             </ul>
           </div>
@@ -389,27 +382,22 @@ export default function Skills() {
 
             <ul className="text-muted-foreground list-disc list-inside space-y-2">
               <li>
-                Conducted software requirements gathering for university
-                software engineering projects.
+                Conducted technical research and technology evaluation for
+                software development projects.
               </li>
-
               <li>
-                Performed literature reviews and technical research during
-                project development.
+                Gathered and analysed software and product requirements.
               </li>
-
+              <li>
+                Designed UI/UX prototypes and applied Human-Computer Interaction
+                principles to interface and workflow design.
+              </li>
               <li>
                 Evaluated user feedback during iterative software development.
               </li>
-
               <li>
-                Applied Human-Computer Interaction principles to interface and
-                workflow design.
-              </li>
-
-              <li>
-                Used usability testing and user feedback to identify pain
-                points and improve application workflows.
+                Applied usability testing to identify pain points and improve
+                application workflows.
               </li>
             </ul>
           </div>
@@ -421,8 +409,6 @@ export default function Skills() {
             </h3>
 
             <div className="space-y-6">
-
-              {/* University */}
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
                   <h4 className="text-lg font-semibold text-foreground">
@@ -442,7 +428,6 @@ export default function Skills() {
                   <p className="text-sm font-medium text-foreground mb-1">
                     Relevant Coursework
                   </p>
-
                   <p className="text-sm text-muted-foreground">
                     Software Engineering · Database Systems · Cloud Computing ·
                     Machine Learning · Human-Computer Interaction · Agile
@@ -451,7 +436,6 @@ export default function Skills() {
                 </div>
               </div>
 
-              {/* High School */}
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
                   <h4 className="text-lg font-semibold text-foreground">
@@ -477,19 +461,15 @@ export default function Skills() {
             </h3>
 
             <div className="space-y-6">
-
-              {/* Certification */}
               <div>
                 <h4 className="font-semibold text-foreground">
                   Microsoft Office Training
                 </h4>
-
                 <p className="text-muted-foreground">
                   Grahams Technical College · June 2022
                 </p>
               </div>
 
-              {/* Community */}
               <div>
                 <h4 className="font-semibold text-foreground mb-3">
                   Community Involvement
@@ -498,15 +478,12 @@ export default function Skills() {
                 <ul className="text-muted-foreground list-disc list-inside space-y-2">
                   <li>
                     Community Service at Karura Health Center — assisted with
-                    patient flow and supported staff in an understaffed
-                    environment.
+                    patient flow and supported staff.
                   </li>
-
                   <li>
                     Environmental Conservation — participated in afforestation
                     projects in Nairobi supporting land rehabilitation.
                   </li>
-
                   <li>
                     Volunteer at The Nest — supported abandoned children and
                     young mothers.
@@ -515,7 +492,6 @@ export default function Skills() {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
