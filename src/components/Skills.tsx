@@ -7,125 +7,86 @@ const skillCategories = [
   },
   {
     title: "Frontend Development",
-    skills: [
-      "Angular",
-      "React",
-      "HTML5",
-      "CSS3",
-      "Bootstrap",
-      "Vite",
-    ],
+    skills: ["Angular", "React", "HTML5", "CSS3", "Bootstrap", "Vite"],
   },
   {
     title: "Backend & APIs",
     skills: [
-      "Node.js",
-      "Express.js",
-      "Django",
-      "Django REST Framework",
-      "Flask",
-      "Spring Boot",
-      "REST APIs",
-      "JWT Authentication",
-      "API Integration",
+      "Node.js", "Express.js", "Django", "Django REST Framework", "Flask",
+      "Spring Boot", "REST APIs", "JWT Authentication", "API Integration",
     ],
   },
   {
     title: "Databases",
     skills: [
-      "PostgreSQL",
-      "MySQL",
-      "Firebase Firestore",
-      "Relational Database Design",
+      "PostgreSQL", "MySQL", "Firebase Firestore", "Relational Database Design",
       "CRUD Operations",
     ],
   },
   {
     title: "Tools & Platforms",
     skills: [
-      "Git",
-      "GitHub",
-      "Docker",
-      "Postman",
-      "VS Code",
-      "Figma",
-      "Linear",
-      "Google Colab",
-      "Android Studio",
+      "Git", "GitHub", "Docker", "Postman", "VS Code", "Figma", "Linear",
+      "Google Colab", "Android Studio",
     ],
   },
   {
     title: "Cloud & Deployment",
     skills: [
-      "Microsoft Azure",
-      "AWS",
-      "Google Cloud",
-      "Render",
-      "Vercel",
+      "Microsoft Azure", "AWS", "Google Cloud", "Render", "Vercel",
       "Cloud Deployment Fundamentals",
     ],
   },
   {
     title: "Software Development Practices",
     skills: [
-      "Object-Oriented Programming",
-      "Git Workflows",
-      "Agile Methodologies",
-      "Testing & Debugging",
-      "Database Design",
-      "CI/CD Fundamentals",
-      "Secure Coding Fundamentals",
-      "Software Development Lifecycle",
+      "Object-Oriented Programming", "Git Workflows", "Agile Methodologies",
+      "Testing & Debugging", "Database Design", "CI/CD Fundamentals",
+      "Secure Coding Fundamentals", "Software Development Lifecycle",
     ],
   },
   {
     title: "Data & Analytics",
     skills: [
-      "Pandas",
-      "NumPy",
-      "Excel",
-      "Data Visualization",
+      "Pandas", "NumPy", "Excel", "Data Visualization",
       "Financial Dashboard Design",
     ],
   },
   {
     title: "AI & Generative AI",
     skills: [
-      "Generative AI",
-      "Prompt Engineering",
-      "ChatGPT",
-      "Claude",
-      "Gemini",
-      "GitHub Copilot",
-      "AI-Assisted Development",
+      "Generative AI", "Prompt Engineering", "ChatGPT", "Claude", "Gemini",
+      "GitHub Copilot", "AI-Assisted Development", "AI-Assisted Research",
+      "AI Workflow Automation", "Business Process Automation",
+    ],
+  },
+  {
+    title: "Business Analysis & Quality Assurance",
+    skills: [
+      "Business Requirements Analysis", "Business Process Analysis",
+      "Requirements Documentation", "Software Quality Assurance",
+      "Software Testing", "Defect Identification & Reporting",
+      "Product Analysis", "Process Improvement", "Workflow Analysis",
+      "Technical Documentation",
     ],
   },
   {
     title: "Product & User-Centered Development",
     skills: [
-      "UI/UX Prototyping",
-      "User-Centered Design",
-      "Requirements Gathering",
-      "Requirements Analysis",
-      "Technical Research",
-      "User Research",
-      "Usability Testing",
-      "Product Thinking",
-      "Product Documentation",
+      "UI/UX Prototyping", "User-Centered Design", "Requirements Gathering",
+      "Requirements Analysis", "Technical Research", "User Research",
+      "Usability Testing", "Product Thinking", "Product Documentation",
       "Human-Computer Interaction",
     ],
   },
   {
     title: "Professional Skills",
     skills: [
-      "Stakeholder Communication",
-      "Cross-Functional Collaboration",
-      "Technical Communication",
-      "Analytical Reasoning",
-      "Problem Solving",
-      "Presentation Skills",
-      "Project Planning",
-      "Technical Documentation",
+      "Stakeholder Communication", "Cross-Functional Collaboration",
+      "Technical Communication", "Analytical Reasoning", "Problem Solving",
+      "Presentation Skills", "Project Planning", "Technical Documentation",
+      "Business-Technical Alignment", "Requirements Clarification",
+      "Team Collaboration",
     ],
   },
 ];
@@ -140,9 +101,11 @@ export default function Skills() {
           </h2>
 
           <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            Technical, product, research, and professional skills developed
-            through industry experience, software engineering projects, and
-            collaborative product development.
+            A multidisciplinary skill set spanning software engineering,
+            technical business analysis, quality assurance, AI-assisted
+            development, and product innovation, developed through
+            professional experience, technical research, and collaborative
+            software projects.
           </p>
 
           <div className="grid gap-6 md:grid-cols-2">
@@ -154,7 +117,6 @@ export default function Skills() {
                 <h3 className="text-lg font-semibold text-foreground mb-4">
                   {category.title}
                 </h3>
-
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
                     <Badge
@@ -169,7 +131,7 @@ export default function Skills() {
               </div>
             ))}
           </div>
-
+          
           {/* Professional Experience */}
           <div className="mt-12 bg-white rounded-xl p-8 shadow-sm border border-border">
             <h3 className="text-xl font-semibold text-foreground mb-6">
@@ -177,19 +139,66 @@ export default function Skills() {
             </h3>
 
             <div className="space-y-10">
-              {/* Eclectics International */}
+              {/* RiverCross Tracking Limited */}
+              <div>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
+                  <div>
+                    <h4 className="text-lg font-semibold text-foreground">
+                      Technical Business Analyst Intern
+                    </h4>
+                    <p className="text-muted-foreground">
+                      RiverCross Tracking Limited · Business Operations
+                    </p>
+                  </div>
+                  <span className="text-sm text-muted-foreground whitespace-nowrap">
+                    October 2026 – Present
+                  </span>
+                </div>
+
+                <ul className="text-muted-foreground list-disc list-inside space-y-2 mt-3">
+                  <li>
+                    Support business requirements analysis by identifying
+                    operational needs, documenting system requirements, and
+                    aligning technical solutions with business objectives.
+                  </li>
+                  <li>
+                    Assist in software quality assurance and testing, including
+                    identifying, documenting, and reporting system defects to
+                    support product reliability.
+                  </li>
+                  <li>
+                    Explore AI and automation opportunities to streamline
+                    business workflows, improve operational efficiency, and
+                    support process optimization.
+                  </li>
+                  <li>
+                    Provide analytical support through product evaluation,
+                    business process analysis, and technical problem-solving.
+                  </li>
+                  <li>
+                    Contribute to technical documentation, workflow analysis,
+                    and process improvement initiatives to support system
+                    enhancements.
+                  </li>
+                  <li>
+                    Collaborate with business operations and technical teams
+                    to support product understanding, requirements clarification,
+                    and solution delivery.
+                  </li>
+                </ul>
+              </div>
+
+               {/* Eclectics International */}
               <div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
                   <div>
                     <h4 className="text-lg font-semibold text-foreground">
                       Software Development Intern
                     </h4>
-
                     <p className="text-muted-foreground">
                       Eclectics International · Products, Research & Development
                     </p>
                   </div>
-
                   <span className="text-sm text-muted-foreground whitespace-nowrap">
                     August 2026 – September 2026
                   </span>
@@ -201,34 +210,29 @@ export default function Skills() {
                     development, financial dashboards, data visualization, and
                     API integration to support project technology decisions.
                   </li>
-
                   <li>
                     Proposed SmartEntry, a visitor management and security
                     platform, and researched its architecture, technology stack,
                     and deployment options during project selection.
                   </li>
-
                   <li>
                     Contributed to SM-Intelligence, a financial management
                     platform, working on the Angular customer-facing frontend
                     within an architecture incorporating Kotlin, Spring Boot,
                     and PostgreSQL.
                   </li>
-
                   <li>
                     Designed UI/UX prototypes in Figma for landing,
                     authentication, onboarding, and dashboard interfaces,
                     applying financial dashboard design and usability
                     principles.
                   </li>
-
                   <li>
                     Developed customer-facing features covering registration,
                     login, onboarding, dashboard, accounts, transactions, cash
                     flow, budgets, analysis, reports, notifications, and
                     settings.
                   </li>
-
                   <li>
                     Collaborated using Git and GitHub for version control and
                     Linear for task tracking while contributing to requirements
@@ -237,19 +241,17 @@ export default function Skills() {
                 </ul>
               </div>
 
-              {/* KCB Group */}
+               {/* KCB Group */}
               <div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-1 mb-2">
                   <div>
                     <h4 className="text-lg font-semibold text-foreground">
                       Technology Division Intern
                     </h4>
-
                     <p className="text-muted-foreground">
                       KCB Group · Strategy, Planning & Communications
                     </p>
                   </div>
-
                   <span className="text-sm text-muted-foreground whitespace-nowrap">
                     January 2026 – April 2026
                   </span>
@@ -261,22 +263,18 @@ export default function Skills() {
                     enterprise technology initiatives within KCB&apos;s
                     Technology Division.
                   </li>
-
                   <li>
                     Analysed business workflows and contributed recommendations
                     to improve operational efficiency.
                   </li>
-
                   <li>
                     Participated in technology planning by gathering information
                     from technical and business teams.
                   </li>
-
                   <li>
                     Assisted with technology documentation and communication of
                     project updates across stakeholders.
                   </li>
-
                   <li>
                     Gained exposure to enterprise APIs, Microsoft Azure, AWS,
                     fintech infrastructure, and digital transformation
@@ -292,11 +290,8 @@ export default function Skills() {
                     <h4 className="text-lg font-semibold text-foreground">
                       Event Organizer
                     </h4>
-                    <p className="text-muted-foreground">
-                      SEED Global Education
-                    </p>
+                    <p className="text-muted-foreground">SEED Global Education</p>
                   </div>
-
                   <span className="text-sm text-muted-foreground whitespace-nowrap">
                     July 2024 – July 2025
                   </span>
@@ -324,7 +319,6 @@ export default function Skills() {
                     </h4>
                     <p className="text-muted-foreground">EducationUSA</p>
                   </div>
-
                   <span className="text-sm text-muted-foreground whitespace-nowrap">
                     September 2025 – October 2025
                   </span>
@@ -353,7 +347,6 @@ export default function Skills() {
             <h3 className="text-xl font-semibold text-foreground mb-5">
               AI Experience
             </h3>
-
             <ul className="text-muted-foreground list-disc list-inside space-y-2">
               <li>
                 Use Generative AI tools including ChatGPT, Claude, Gemini, and
@@ -379,7 +372,6 @@ export default function Skills() {
             <h3 className="text-xl font-semibold text-foreground mb-5">
               Research & Product Experience
             </h3>
-
             <ul className="text-muted-foreground list-disc list-inside space-y-2">
               <li>
                 Conducted technical research and technology evaluation for
@@ -402,28 +394,24 @@ export default function Skills() {
             </ul>
           </div>
 
-          {/* Education */}
+           {/* Education */}
           <div className="mt-8 bg-white rounded-xl p-8 shadow-sm border border-border">
             <h3 className="text-xl font-semibold text-foreground mb-6">
               Education
             </h3>
-
             <div className="space-y-6">
               <div>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 mb-2">
                   <h4 className="text-lg font-semibold text-foreground">
                     BSc. Software Engineering
                   </h4>
-
                   <span className="text-sm text-muted-foreground">
                     2022 – 2026
                   </span>
                 </div>
-
                 <p className="text-muted-foreground">
                   United States International University – Africa
                 </p>
-
                 <div className="mt-3">
                   <p className="text-sm font-medium text-foreground mb-1">
                     Relevant Coursework
@@ -441,25 +429,20 @@ export default function Skills() {
                   <h4 className="text-lg font-semibold text-foreground">
                     KCSE · Mean Grade: B
                   </h4>
-
                   <span className="text-sm text-muted-foreground">
                     2018 – 2022
                   </span>
                 </div>
-
-                <p className="text-muted-foreground">
-                  Moi High School Kabarak
-                </p>
+                <p className="text-muted-foreground">Moi High School Kabarak</p>
               </div>
             </div>
           </div>
 
-          {/* Certifications & Community */}
+           {/* Certifications & Community */}
           <div className="mt-8 bg-white rounded-xl p-8 shadow-sm border border-border">
             <h3 className="text-xl font-semibold text-foreground mb-6">
               Certifications & Community Involvement
             </h3>
-
             <div className="space-y-6">
               <div>
                 <h4 className="font-semibold text-foreground">
@@ -469,12 +452,10 @@ export default function Skills() {
                   Grahams Technical College · June 2022
                 </p>
               </div>
-
               <div>
                 <h4 className="font-semibold text-foreground mb-3">
                   Community Involvement
                 </h4>
-
                 <ul className="text-muted-foreground list-disc list-inside space-y-2">
                   <li>
                     Community Service at Karura Health Center — assisted with
